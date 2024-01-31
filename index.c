@@ -43,7 +43,7 @@ void afficherEmps(struct list* listEmployees){
         printf("\n -> La liste est vide.! -_- \n\n");
     }else{
         struct employe * it=listEmployees->head;
-        printf("\n == Liste des employes == \n{\n");
+        printf("\n == Liste des employes == \n[\n");
         while(it!=NULL){
             printf("  {\n   code : %d,\n   nom : %s,\n   prenom : %s,\n   date Naissance : %d/%d/%d,\n   titre de poste : %s,\n   salaire : %d \n  }, \n",
                         it->code, it->nom, it->prenom, 
@@ -52,7 +52,7 @@ void afficherEmps(struct list* listEmployees){
             );
             it=it->next;
         }
-        printf("\n}\n");
+        printf("\n]\n");
     }
 }
 
